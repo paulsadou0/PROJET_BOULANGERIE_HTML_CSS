@@ -1,0 +1,124 @@
+/**********PAGE-REGISTER**********/
+
+.page-register{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: slide 5s;
+}
+
+@keyframes slide {
+    0%{
+        margin-left: 120%;
+    }
+    100%{
+        margin-left: 3%;
+    }
+}
+
+.page-register .page-accueil{
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    text-wrap: nowrap;
+    transition: 0.3s;
+    animation: slide 5s;
+    transition: 0.5s ease;
+}
+
+.page-register .page-accueil a{
+    text-decoration: none;
+    color: none;
+}
+.page-register .page-accueil a:hover{
+    color: #1877f2;
+    text-decoration: underline;
+}
+
+.page-register #form{
+    box-shadow: 0px 2px 12px #7d7d7d;
+    padding: 20px;
+    width: 25%;
+    height: 70%;
+    transition: 5s ease-in-out;
+    animation: animate 5s ease-in-out;
+}
+
+/************ANIMATION*************/
+
+@keyframes animate {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.page-register form h1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: beige;
+}
+
+.page-register form .form-register{
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.page-register form .form-register input{
+    width: 100%;
+    height: 35px;
+    padding-left: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+}
+
+.page-register form .form-register input:focus{
+    border: 0.5px solid #1877f2;
+}
+
+.page-register form .form-register button{
+    width: 103%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.page-register form .form-register-infos{
+    text-align: center;
+    font-size: 12px;
+}
+
+.page-register form .form-register-infos a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.page-register form .form-register-infos a:hover{
+    color: #1877f2;
+    text-decoration: underline;
+}
+
+/***********MEDIA************/
+
+@media screen and (max-width: 750px) {
+    .page-register #form{
+        width: 50%;
+    }
+
+    .page-register #form h1{
+        font-size: 25px;
+    }
+}

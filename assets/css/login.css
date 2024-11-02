@@ -1,0 +1,136 @@
+/**********PAGE-CONTACT***********/
+
+.page-login {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-login .page-accueil {
+    position: absolute;
+    top: 10px;
+    left: 3%;
+    text-wrap: nowrap;
+    transition: 3s ease-in-out;
+    animation: slide 5s;
+}
+
+.page-login .page-accueil a {
+    text-decoration: none;
+    color: none;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: -120%;
+    }
+
+    100% {
+        margin-left: 3%;
+    }
+}
+
+.page-login .page-accueil a:hover {
+    color: #1817f2;
+    text-decoration: underline;
+}
+
+.page-login form {
+    box-shadow: 0px 2px 12px #7d7d7d;
+    padding: 20px;
+    width: 25%;
+    height: 50%;
+    transition: 5s ease-in-out;
+    animation: animation 8s;
+}
+
+@keyframes animation {
+    0% {
+        /* margin-left: -150%; */
+        transform: scale(0);
+    }
+    
+    100% {
+        /* margin-left: 0; */
+        transform: scale(1.1);
+    }
+}
+
+.page-login form h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: beige;
+}
+
+.page-login form .form-line {
+    padding: 3px;
+}
+
+.page-login form .form-line input {
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+}
+
+.page-login form .form-line input:focus {
+    border: 0.5px solid #1877f2;
+}
+
+.page-login form .form-line button {
+    width: 103%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.page-login form .form-line-infos p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.page-login form .form-line-infos a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.page-login form .form-line-infos a:hover {
+    color: #1877f2;
+    text-decoration: underline;
+}
+
+/***********MEDIA************/
+@media screen and (max-width: 750px) {
+    .page-login form {
+        width: 50%;
+        height: 60%;
+    }
+
+    .page-login form h1 {
+        font-size: 28px;
+    }
+
+    .page-login form .form-line input {
+        width: 100%;
+        height: 35px;
+        margin-left: -5px;
+    }
+
+    .page-login form .form-line button {
+        width: 105%;
+        height: 35px;
+    }
+}

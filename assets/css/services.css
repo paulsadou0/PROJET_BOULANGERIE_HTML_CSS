@@ -1,0 +1,122 @@
+/***********PAGE-SERVICES*************/
+
+.page-services {
+    padding: 20px;
+}
+
+.page-services .services-items {
+    margin-top: 65px;
+}
+
+.page-services .services-items .service-title h2 {
+    position: relative;
+    top: 10px;
+    left: 4px;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+    animation: opacity 3s ease-in-out;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+.page-services .services-items .service-item-line img {
+    border: 0.5px solid #ccc;
+    transition: 0.3s;
+    animation: slide 3s ease;
+}
+
+@keyframes slide {
+    from {
+        margin-left: -50%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+.page-services .services-items .service-item-line p {
+    transition: 0.3s;
+    animation: purl 3s;
+}
+
+/*************ANIMATION***************/
+@keyframes purl {
+    from {
+        margin-left: 250%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+.page-services .service-item-line {
+    gap: 20px;
+    text-align: justify;
+}
+
+/***********MEDIA************/
+
+@media screen and (max-width: 750px) {
+    .page-services .services-items .service-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .page-services .services-items .service-item-line {
+        display: block;
+        text-align: justify;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .services-items{
+        padding: 20px;
+        padding-left: 10%;
+    }
+    .page-services .services-items .service-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .page-services .services-items .service-item-line {
+        display: block;
+        justify-content: center;
+    }
+
+    .page-services .services-items .service-item-line {
+       text-align: justify;
+       padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .services-items{
+        padding: 20px;
+        padding-left: 10%;
+    }
+    .page-services .services-items .service-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .page-services .services-items .service-item-line {
+        display: block;
+        justify-content: center;
+    }
+
+    .page-services .services-items .service-item-line {
+       text-align: justify;
+       padding-left: 10%;
+    }
+}

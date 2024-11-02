@@ -1,0 +1,155 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1px;
+}
+
+.flex-2{
+    flex: 2px;
+}
+
+.flex-3{
+    flex: 3px;
+}
+
+.flex-4{
+    flex: 4px;
+}
+
+.flex-5{
+    flex: 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+.gap-25{
+    gap: 25px;
+}
+
+.block{
+    display: block;
+}
+
+.jcc, .flex-center-h{
+    justify-content: center;
+}
+
+.aic, .flex-center-v{
+    align-items: center;
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-25{
+    padding: 25px;
+}
+
+.m-5{
+    margin: 5px;
+}
+.m-10{
+    margin: 10px;
+}
+.m-15{
+    margin: 15px;
+}
+.m-20{
+    margin: 20px;
+}
+.m-25{
+    margin: 25px;
+}
+.m-30{
+    margin: 30px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+i{
+    color: #cccc;
+    cursor: pointer;
+}
+
+
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.fixed{
+    position: fixed;
+}
+.sticky{
+    position: sticky;
+}
+
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+
+
+
+

@@ -1,0 +1,111 @@
+ /********PAGE-PRODUITS*********/  
+header .page-produits{
+    position: relative;
+    top: 80px; 
+}
+
+header .container-page-produits .produits-items-line{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+header .container-page-produits .produits-items{
+    padding-top: 20px;
+    border-radius: 8px;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    animation: scale 3s ease;
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+header .container-page-produits .produits-items:hover{
+    transform: scale(1.1);
+}
+
+header .container-page-produits .produits-items img{
+height: 120px;
+border-bottom: 1px solid #181818;
+}
+
+header .container-page-produits .produits-items .text-item{
+    font-size: 1.2rem;    
+}
+
+header .container-page-produits .produits-items .price-item{
+    font-size: 1rem;
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 2px #181818;
+}
+
+/**********MEDIA***********/
+
+@media screen and (max-width: 950px) {
+    header .container-page-produits .produits-items-line{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header .container-page-produits .produits-items{
+        border-radius: 8px;
+        height: 200px;
+        width: 200px;
+    }
+    header .container-page-produits .produits-items img{
+        height: 100px;
+        }
+
+        header .container-page-produits .produits-items .text-item{    
+            font-size: 1rem;
+        }
+        
+        header .container-page-produits .produits-items .price-item{
+            margin-top: -5px;
+            font-size: 0.7rem;
+        }
+      
+}
+@media screen and (max-width: 650px) {
+    header .container-page-produits .produits-items-line{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header .container-page-produits .produits-items{
+        border-radius: 8px;
+        height: 190px;
+        width: 190px;
+    }
+    header .container-page-produits .produits-items img{
+        height: 90px;
+        }
+}
+@media screen and (max-width: 320px) {
+    header .container-page-produits .produits-items-line{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .container-page-produits .produits-items{
+        border-radius: 8px;
+        height: 170px;
+        width: 170px;
+    }
+
+    header .container-page-produits .produits-items img{
+        height: 80px;
+        }
+}
+
+
+
